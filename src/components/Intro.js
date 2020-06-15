@@ -14,7 +14,6 @@ const  Intro =()=>{
         <select name="gameMode" value={mode} onChange={e =>setMode(e.target.value)}>
             <option value="theOffice">The Office</option>
             <option value="friends">Friends</option>
-            <option value="qqq">Friends</option>
         </select>
         </div>
         <button type='submit' onClick={clicked}>Play now</button>
