@@ -5,8 +5,9 @@
     left: 0;
     margin:0 auto;
     background-color: black;
-    color: white;
     display: flex;
+    text-decoration: none;
+    
     
 }
 
@@ -14,6 +15,8 @@
     
     display: inline-block;
     padding: 10px;
+    color: white;
     justify-content: left;
+    text-decoration: none;
    
 }
