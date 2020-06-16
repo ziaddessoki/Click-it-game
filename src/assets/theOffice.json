@@ -1,0 +1,15 @@
+[
+    {
+        "id":1,
+        "image":"../assets/images/michael.jpeg",
+        "clicked": false
+    },{
+        "id":2,
+        "image":"../assets/images/jim.jpeg",
+        "clicked": false
+    },{
+        "id":3,
+        "image":"../assets/images/pam.jpeg",
+        "clicked": false
+    }
+]

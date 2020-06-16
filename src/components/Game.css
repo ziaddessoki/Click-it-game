@@ -1,0 +1,10 @@
+.Game{
+    margin: 2% 3%;
+    padding:10px 100px;
+    border: 1px solid black;
+    height:500px;
+    background-color: rgba(143, 140, 140, 0.719);
+    border-radius: 2%;
+    color: white;
+    
+}

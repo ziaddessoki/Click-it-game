@@ -9,7 +9,7 @@ const  Intro =()=>{
         }
     return(
         <div className="Home">
-        <p>lorem   dsoisdlkjsdoksldsodjl</p>
+        <p>Game Instructions - Try to click on every NBA Players picture once. When you click a players picture the grid will automatically shuffle. The goal of the game is click all 15 players pictures once despite the shuffled grid. If you click any players picture twice the game will reset and you must begin again!</p>
         <div>
         <select name="gameMode" value={mode} onChange={e =>setMode(e.target.value)}>
             <option value="theOffice">The Office</option>
@@ -20,7 +20,9 @@ const  Intro =()=>{
         </div>
     );
     
-}   
+} 
+
+
     
 
 export default Intro;
