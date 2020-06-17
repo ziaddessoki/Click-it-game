@@ -9,13 +9,28 @@ class Game extends React.Component {
     score : 0,
     topScore: 0
   }
+  imageClicked =id =>{
+    let guessedRight = false;
+    const newData = this.state.data.map( person =>{
+      let newPerson ={...person};
+      if(newPerson.id == id){
+        if (!newPerson.clicked){
+          guessedRight =true;
+          newPerson.clicked=true;
+        }
+      }
+      return newPerson
+    })
+    guessedRight? correctAnswer(newData) : wrongAnswer(newData)
+  }
 
     render() {
       return (
           <div className="Game">
               {this.state.data.map(person =>(
                 <div>
-                <Actor key={person.id} src={person.image}></Actor>
+                <Actor key={person.id} src={person.image}
+                imgClicked={this.imageClicked}></Actor>
                 </div>
               ))}
           </div>
