@@ -1,5 +1,6 @@
 import React from 'react';
 import './Game.css';
+import Actor from './Actor';
 import theOffice from '../assets/theOffice.json'
 
 class Game extends React.Component {
@@ -11,8 +12,12 @@ class Game extends React.Component {
 
     render() {
       return (
-          <div className='Game'>
-              <h1>Hello, {this.props.name} lorem10</h1>;
+          <div className="Game">
+              {this.state.data.map(person =>(
+                <div>
+                <Actor key={person.id} src={person.image}></Actor>
+                </div>
+              ))}
           </div>
       )
     }
