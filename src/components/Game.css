@@ -1,13 +1,14 @@
 .Game{
     margin: 2% 3%;
-    padding:100px 100px;
+    padding:10px 10px;
     border: 1px solid black;
     height:500px;
     background-color: rgba(143, 140, 140, 0.719);
     border-radius: 2%;
     color: white;
-    display: flex;
-  justify-content: wrap;
-  overflow: auto;
+    /* display: table-cell;
+    justify-content: wrap; */
+    overflow: auto;
+    /* display: flex */
     
 }
