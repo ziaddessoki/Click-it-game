@@ -3,10 +3,13 @@
     height:40px;
     top: 0;
     left: 0;
+    width: 100%;
     margin:0 auto;
     background-color: black;
     display: flex;
     text-decoration: none;
+    position: fixed;
+    z-index: 80;
     
     
 }

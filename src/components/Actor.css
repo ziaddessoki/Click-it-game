@@ -1,17 +1,18 @@
 .Actor{
 width:240px;
 height:150px;
-/* background-size: cover;
-  background-position: center; */
+background-size: cover;
+  background-position: center;
   margin: 8px 2px;
   border: 1px solid black (241, 241, 241);
   border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   cursor: pointer;
   /* flex: 33.33%; */
-  position:relative;
+  /* position:relative; */
    display: inline-block;
-   float:left;
-   padding:10px;
+   /* float:left; */
+   padding:5px 10px;
+   z-index: 40;
  
 }
