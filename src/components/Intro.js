@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom'
 import './Intro.css'
 
-const  Intro =()=>{
+const  Intro =(props)=>{
         const[mode,setMode]= useState('theOffice');
         const clicked=()=>{
-            // redirt to /game with mode
+            let path = `/game`;
+    props.history.push(path)
             console.log(mode);
         }
     return(
