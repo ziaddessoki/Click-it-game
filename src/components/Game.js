@@ -79,6 +79,7 @@ class Game extends React.Component {
           <div className="Game">
              {this.state.data.map(person =>(
                 <Actor key={person.id} src={person.image}
+                shake={!this.state.score && this.state.topScore}
                 imgClicked={() =>this.imageClicked(person.id)}></Actor>
               ))}
           </div>
