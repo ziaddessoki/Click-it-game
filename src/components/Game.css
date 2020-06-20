@@ -15,11 +15,18 @@
     
   justify-content: center;
   align-items: center;
+  clear: both;
     
 }
 
 .Title{
     width: 400px;
     border-radius: 8px;
-    
+    float: left;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 8%;
+    background-color: #6a8a82;
+    border: 2px black solid;
+
 }
