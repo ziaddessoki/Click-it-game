@@ -2,6 +2,7 @@ import React from 'react';
 import './Game.css';
 import Actor from './Actor';
 import theOffice from '../assets/theOffice.json'
+import Score from './Score'
 
 class Game extends React.Component {
   state={
@@ -72,13 +73,14 @@ class Game extends React.Component {
 
     render() {
       return (
+        <div>
+          <Score score={this.state.score} topScore={this.state.topScore}></Score>
           <div className="Game">
-            <h1 style={{color:'white'}}>{this.state.score}</h1>
-            <h1 style={{color:'white'}}>{this.state.topScore}</h1>
-              {this.state.data.map(person =>(
+             {this.state.data.map(person =>(
                 <Actor key={person.id} src={person.image}
                 imgClicked={() =>this.imageClicked(person.id)}></Actor>
               ))}
+          </div>
           </div>
       )
     }
