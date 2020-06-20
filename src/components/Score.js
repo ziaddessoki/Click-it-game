@@ -3,8 +3,8 @@ import './Score.css'
 
 function Score(props) {
     return (
-        <div className="Score">
-            <p>Score:{props.score} ||  Top Score:{props.topScore}</p>
+        <div >
+            <p className="Score">Score:{props.score} ||  Top Score:{props.topScore}</p>
         </div>
     )
 }
