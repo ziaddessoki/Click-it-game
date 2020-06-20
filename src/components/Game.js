@@ -5,11 +5,24 @@ import theOffice from '../assets/theOffice.json'
 import Score from './Score'
 
 class Game extends React.Component {
-  state={
-    data: theOffice,
-    score : 0,
-    topScore: 0
+  
+  constructor(props){
+    super(props);
+    this.state= { 
+      data: [],
+      score : 0,
+      topScore: 0,
+      goal:0,
+      mode:"",
+    }
+}
+
+  componentDidMount() {
+    if(this.props.location.state){console.log(this.props.location.state)};
+    this.setState({ data: this.shuffle(theOffice),mode: "THE OFFICE", goal:130 });
   }
+
+
   shuffle=(data) =>{
     let ctr = data.length, temp, index;
 // While there are elements in the array
@@ -74,7 +87,7 @@ class Game extends React.Component {
     render() {
       return (
         <div >
-          <p className="Title">THE OFFICE    <spam style={{fontWeight:200, fontSize:'25px'}}>Goal:130</spam></p>
+          <div className="Title"><p>{this.state.mode}</p><h1 style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</h1></div>
           <Score score={this.state.score} topScore={this.state.topScore}></Score>
           <div className="Game">
              {this.state.data.map(person =>(

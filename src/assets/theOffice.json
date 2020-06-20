@@ -1,43 +1,43 @@
 [
     {
         "id":1,
-        "image":"./images/michael.jpg",
+        "image":"./images/theOffice/michael.jpg",
         "clicked": false
     },{
         "id":2,
-        "image":"./images/jim.jpeg",
+        "image":"./images/theOffice/jim.jpeg",
         "clicked": false
     },{
         "id":3,
-        "image":"./images/pam.jpeg",
+        "image":"./images/theOffice/pam.jpeg",
         "clicked": false
     },{
         "id":4,
-        "image":"./images/andy.jpg",
+        "image":"./images/theOffice/andy.jpg",
         "clicked": false
     },{
         "id":5,
-        "image":"./images/angela.jpg",
+        "image":"./images/theOffice/angela.jpg",
         "clicked": false
     },{
         "id":6,
-        "image":"./images/dwight.jpg",
+        "image":"./images/theOffice/dwight.jpg",
         "clicked": false
     },{
         "id":7,
-        "image":"./images/kelly.jpg",
+        "image":"./images/theOffice/kelly.jpg",
         "clicked": false
     },{
         "id":8,
-        "image":"./images/kevin.jpg",
+        "image":"./images/theOffice/kevin.jpg",
         "clicked": false
     },{
         "id":9,
-        "image":"./images/meredith.jpg",
+        "image":"./images/theOffice/meredith.jpg",
         "clicked": false
     },{
         "id":10,
-        "image":"./images/oscar.jpg",
+        "image":"./images/theOffice/oscar.jpg",
         "clicked": false
     },{
         "id":11,
@@ -45,11 +45,11 @@
         "clicked": false
     },{
         "id":12,
-        "image":"./images/ryan.jpg",
+        "image":"./images/theOffice/ryan.jpg",
         "clicked": false
     },{
         "id":13,
-        "image":"./images/stanly.png",
+        "image":"./images/theOffice/stanly.png",
         "clicked": false
     }
 ]

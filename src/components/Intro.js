@@ -6,7 +6,7 @@ const  Intro =(props)=>{
         const[mode,setMode]= useState('theOffice');
         const clicked=()=>{
             let path = `/game`;
-    props.history.push(path)
+    props.history.push(path,mode)
             console.log(mode);
         }
     return(
