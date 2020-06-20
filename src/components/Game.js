@@ -73,7 +73,7 @@ class Game extends React.Component {
 
     render() {
       return (
-        <div>
+        <div >
           <Score score={this.state.score} topScore={this.state.topScore}></Score>
           <div className="Game">
              {this.state.data.map(person =>(

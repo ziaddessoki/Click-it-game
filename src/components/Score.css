@@ -1,7 +1,12 @@
 .Score{
-    padding: 2% 3%;
-    margin:10px;
-    border: 2px black solid;
-    border-radius: 4%;
     
+    width: 600px;
+    padding: 2px 7px;
+    margin-top:50px;
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 8px;
+    background-color: #a7417a;
+    font-size: 10px;
+
 }
