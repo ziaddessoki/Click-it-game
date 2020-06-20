@@ -74,7 +74,7 @@ class Game extends React.Component {
     render() {
       return (
         <div >
-          <p className="Title">THE OFFICE</p>
+          <p className="Title">THE OFFICE    <spam style={{fontWeight:200, fontSize:'25px'}}>Goal:130</spam></p>
           <Score score={this.state.score} topScore={this.state.topScore}></Score>
           <div className="Game">
              {this.state.data.map(person =>(

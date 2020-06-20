@@ -1,6 +1,6 @@
 .Score{
     /* margin: auto; */
-    width: 300px;
+    width: 200px;
     border-radius: 8px;
     float: right;
     margin: 50px 6% 10px auto;
@@ -9,6 +9,7 @@
     padding: 5px;
     color: white;
     font-weight: bold;
+    
     
 
 }
