@@ -1,10 +1,10 @@
 
 .Game{
     margin: auto 3%;
-    margin-top: 50px;
+    margin-top: 20px;
     padding:10px 10px;
     border: 1px solid black;
-    height:500px;
+    height:450px;
     
     background-color: rgba(143, 140, 140, 0.719);
     border-radius: 2%;
@@ -15,5 +15,11 @@
     
   justify-content: center;
   align-items: center;
+    
+}
+
+.Title{
+    width: 400px;
+    border-radius: 8px;
     
 }

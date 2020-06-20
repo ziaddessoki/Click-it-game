@@ -1,12 +1,13 @@
 .Score{
-    
-    width: 600px;
+    margin: auto;
+    width: 300px;
     padding: 2px 7px;
     margin-top:50px;
-    margin: auto;
+    margin-right: 3%;
     border: 2px black solid;
     border-radius: 8px;
-    background-color: #a7417a;
+    background-color: #a7417be5;
     font-size: 10px;
+    color: white;
 
 }
