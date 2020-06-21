@@ -2,6 +2,7 @@ import React from 'react';
 import './Game.css';
 import Actor from './Actor';
 import theOffice from '../assets/theOffice.json'
+import friends from '../assets/friends.json'
 import Score from './Score'
 
 class Game extends React.Component {
@@ -18,8 +19,11 @@ class Game extends React.Component {
 }
 
   componentDidMount() {
-    if(this.props.location.state){console.log(this.props.location.state)};
-    this.setState({ data: this.shuffle(theOffice),mode: "THE OFFICE", goal:130 });
+    if(this.props.location.state=== "theOffice"){this.setState({ data: this.shuffle(theOffice),mode: "THE OFFICE", goal:130 })}
+    else{
+      this.setState({ data: this.shuffle(friends),mode: "Friends", goal:60 })
+    };
+    ;
   }
 
 

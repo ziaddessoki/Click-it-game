@@ -6,7 +6,7 @@
     },
     {
         "id":2,
-        "image":"./images/friends/ross.jpg",
+        "image":"./images/friends/ross.png",
         "clicked": false
     }, {
         "id":3,
