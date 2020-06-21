@@ -87,7 +87,7 @@ class Game extends React.Component {
     render() {
       return (
         <div >
-          <div className="Title"><p>{this.state.mode}</p><h1 style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</h1></div>
+          <p className="Title">{this.state.mode} <br/> <spam style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</spam></p>
           <Score score={this.state.score} topScore={this.state.topScore}></Score>
           <div className="Game">
              {this.state.data.map(person =>(
