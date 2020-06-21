@@ -1,7 +1,29 @@
 [
     {
         "id":1,
-        "image":"./images/friends/michael.jpg",
+        "image":"./images/friends/monica.jpg",
+        "clicked": false
+    },
+    {
+        "id":2,
+        "image":"./images/friends/ross.jpg",
+        "clicked": false
+    }, {
+        "id":3,
+        "image":"./images/friends/chandler.jpg",
+        "clicked": false
+    }, {
+        "id":4,
+        "image":"./images/friends/rachel.jpg",
+        "clicked": false
+    }, {
+        "id":5,
+        "image":"./images/friends/joey.jpg",
+        "clicked": false
+    }, {
+        "id":6,
+        "image":"./images/friends/phoebe.jpg",
         "clicked": false
     }
+    
 ]
