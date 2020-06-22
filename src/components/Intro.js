@@ -11,11 +11,17 @@ const  Intro =(props)=>{
         }
     return(
         <div className="Home">
-        <p>Game Instructions - Try to click on every NBA Players picture once. When you click a players picture the grid will automatically shuffle. The goal of the game is click all 15 players pictures once despite the shuffled grid. If you click any players picture twice the game will reset and you must begin again!</p>
+            <h>Click-it</h>
+        <p>Click on any of the character cards. 
+            They will be reshuffled and you'll have to choose another. 
+            As you keep choosing unique characters, you'll gain hearts and magic power.
+            Choose poorly, and you'll lose your magic power and have to start again.
+            Only when you surpass your total from the previous attempt will you begin to gain hearts again.</p>
         <div>
         <select name="gameMode" value={mode} onChange={e =>setMode(e.target.value)}>
-            <option value="theOffice">The Office</option>
-            <option value="friends">Friends</option>
+            <option value="friends">Friends - Easy</option>
+            <option value="theOffice">The Office - Medium</option>
+            
         </select>
         </div>
         <button type='submit' onClick={clicked}>Play now</button>

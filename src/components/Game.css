@@ -3,10 +3,10 @@
     margin: auto 3%;
     margin-top: 20px;
     padding:10px 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height:450px;
     
-    background-color: rgba(204, 196, 196, 0.698);
+    /* background-color: rgba(204, 196, 196, 0.698); */
     border-radius: 2%;
     color: white;
     text-align: center;

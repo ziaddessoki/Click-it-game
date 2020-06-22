@@ -19,7 +19,8 @@ class Game extends React.Component {
 }
 
   componentDidMount() {
-    if(this.props.location.state=== "theOffice"){this.setState({ data: this.shuffle(theOffice),mode: "THE OFFICE", goal:130 })}
+    if(this.props.location.state=== "theOffice"){
+      this.setState({ data: this.shuffle(theOffice),mode: "THE OFFICE", goal:130 })}
     else{
       this.setState({ data: this.shuffle(friends),mode: "Friends", goal:60 })
     };

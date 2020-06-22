@@ -1,12 +1,13 @@
 .Home{
     margin: 2% 3%;
     padding:10px 100px;
-    border: 1px solid black;
-    height:500px;
-    background-color: rgba(143, 140, 140, 0.719);
+    /* border: 1px solid black; */
+    height:250px;
+    background-color: rgba(204, 196, 196, 0.616);
     border-radius: 2%;
-    color: white;
+    color: #282726;
     margin: auto 3%;
     margin-top: 50px;
+    font-weight: bold;
     
 }

@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     margin:0 auto;
-    background-color: #282726;
+    /* background-color: #282726; */
     display: flex;
     text-decoration: none;
     position: fixed;
@@ -18,7 +18,7 @@
     
     display: inline-block;
     padding: 10px;
-    color: white;
+    color: #282726;
     justify-content: left;
     text-decoration: none;
     font-weight: bold;
