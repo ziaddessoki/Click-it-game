@@ -3,11 +3,36 @@
     padding:10px 100px;
     /* border: 1px solid black; */
     height:250px;
-    background-color: rgba(204, 196, 196, 0.616);
+    /* background-color: rgba(204, 196, 196, 0.616); */
+    /* background: radial-gradient( rgba(204, 196, 196, 0.616)70%, rgba(241, 237, 237, 0)20%); */
+    background: radial-gradient(rgba(204, 196, 196, 0.616)50%, rgba(0, 0, 255, 0));
     border-radius: 2%;
     color: #282726;
     margin: auto 3%;
     margin-top: 50px;
     font-weight: bold;
     
+}
+
+h{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+select{
+    font-size: 15px;
+    font-weight: 700;
+    padding: .2em ;
+    border-radius: .5em;
+    border: 1px solid #aaa;
+}
+
+button{
+    background-color: #6a8a82e3;
+    font-size:25px;
+    font-weight: bold;
+    border-radius: .3em;
+    padding: .2em ;
+    margin: 10px;
+    color: #282726;
 }
