@@ -3,7 +3,8 @@ import './Game.css';
 import Actor from './Actor';
 import theOffice from '../assets/theOffice.json'
 import friends from '../assets/friends.json'
-import Score from './Score'
+import Score from './Score';
+import Model from './Model'
 
 class Game extends React.Component {
   
@@ -15,12 +16,13 @@ class Game extends React.Component {
       topScore: 0,
       goal:0,
       mode:"",
+      modelShow:false,
     }
 }
 
   componentDidMount() {
     if(this.props.location.state=== "theOffice"){
-      this.setState({ data: this.shuffle(theOffice),mode: "THE OFFICE", goal:130 })}
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 })}
     else{
       this.setState({ data: this.shuffle(friends),mode: "Friends", goal:60 })
     };
@@ -88,8 +90,22 @@ class Game extends React.Component {
     })
     rightGuess ? this.correctAnswer(newData) : this.wrongAnswer(newData);
   }
+  
+  levelChecker=()=>{
+    // if(this.state.score===20){
+    //   console.log("hitting there")
+    // }
+    if(this.state.score===60 && this.state.mode ==="Friends"){
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 });
+      <h>hey</h>
+    }
+  }
+    
 
     render() {
+      // if(this.state.score=60 && this.state.mode ==="Friends"){
+      //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 })
+      // }
       return (
         <div >
           <p className="Title">{this.state.mode} <br/> <spam style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</spam></p>
@@ -98,9 +114,11 @@ class Game extends React.Component {
              {this.state.data.map(person =>(
                 <Actor key={person.id} src={person.image}
                 shake={!this.state.score && this.state.topScore}
-                imgClicked={() =>this.imageClicked(person.id)}></Actor>
+                imgClicked={() =>{this.imageClicked(person.id);this.levelChecker()}}></Actor>
               ))}
           </div>
+          <Model show={this.state.modelShow}/>
+          {/* {this.levelChecker} */}
           </div>
       )
     }
