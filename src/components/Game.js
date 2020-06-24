@@ -94,16 +94,14 @@ class Game extends React.Component {
   }
   
   levelChecker=()=>{
-    // const childRef = useRef();
-    if(this.state.score=== 30){
-      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130, modelShow: true });
-      // this.childRef.current.handleShow()
+    //test
+    // if(this.state.score=== 30){
+    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130, modelShow: true });
+    // }
+    if(this.state.score===60 && this.state.mode ==="Friends"){
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modelShow: true });
       
     }
-    // if(this.state.score===60 && this.state.mode ==="Friends"){
-    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 });
-      
-    // }
   }
 
   closeModel = ()=>{
