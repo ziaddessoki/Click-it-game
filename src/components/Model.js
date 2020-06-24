@@ -1,33 +1,46 @@
 import React from 'react';
+import Modal from 'react-bootstrap/Modal'
+// import './Modal.css';
 
 
 
 function Model(props) {
-    const [show, setShow] = useState(false);
+    // const [show, setShow] = useState(props.show);
   
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+
+    // if(props.show){
+    //     console.log("hitting")
+    //     handleShow()
+    // }
   
     return (
-      <>
-        <Button variant="primary" onClick={handleShow}>
+        
+      <div >
+        {/* <Button variant="primary" onClick={handleShow}>
           Launch demo modal
-        </Button>
+        </Button> */}
+      {/* {props.show? {handleShow}:''} */}
   
-        <Modal show={show} onHide={handleClose}>
+        <Modal className={Model}
+        // show={show} onHide={handleClose}
+        {...props}>
           <Modal.Header closeButton>
             <Modal.Title>Good Job!!</Modal.Title>
           </Modal.Header>
           <Modal.Body>Woohoo, you've made it to the next level</Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <button variant="secondary" onClick={props.onHide}>
               Close
-            </Button>
+            </button>
             
           </Modal.Footer>
         </Modal>
-      </>
+      </div>
     );
   }
   
-  render(<Model />);
+//   render(<Model />);
+
+  export default Model;

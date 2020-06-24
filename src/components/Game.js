@@ -10,6 +10,7 @@ class Game extends React.Component {
   
   constructor(props){
     super(props);
+    this.child = React.createRef();
     this.state= { 
       data: [],
       score : 0,
@@ -17,6 +18,7 @@ class Game extends React.Component {
       goal:0,
       mode:"",
       modelShow:false,
+      
     }
 }
 
@@ -92,13 +94,20 @@ class Game extends React.Component {
   }
   
   levelChecker=()=>{
-    // if(this.state.score===20){
-    //   console.log("hitting there")
-    // }
-    if(this.state.score===60 && this.state.mode ==="Friends"){
-      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 });
-      <h>hey</h>
+    // const childRef = useRef();
+    if(this.state.score=== 30){
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130, modelShow: true });
+      // this.childRef.current.handleShow()
+      
     }
+    // if(this.state.score===60 && this.state.mode ==="Friends"){
+    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 });
+      
+    // }
+  }
+
+  closeModel = ()=>{
+    this.setState({modelShow:false})
   }
     
 
@@ -106,6 +115,8 @@ class Game extends React.Component {
       // if(this.state.score=60 && this.state.mode ==="Friends"){
       //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 })
       // }
+      // let m = null
+      // {this.state.modelShow? m=<Model/> : ""}
       return (
         <div >
           <p className="Title">{this.state.mode} <br/> <spam style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</spam></p>
@@ -117,7 +128,14 @@ class Game extends React.Component {
                 imgClicked={() =>{this.imageClicked(person.id);this.levelChecker()}}></Actor>
               ))}
           </div>
-          <Model show={this.state.modelShow}/>
+          {/* <button variant="primary" onClick={this.setState({modelShow:true})}>
+          Launch demo modal
+        </button> */}
+          <Model 
+          show={this.state.modelShow} onHide={this.closeModel}
+          // ref={this.child}
+          />
+          {/* {m} */}
           {/* {this.levelChecker} */}
           </div>
       )
