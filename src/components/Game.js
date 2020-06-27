@@ -131,8 +131,7 @@ class Game extends React.Component {
           {/* <button variant="primary" onClick={this.setState({modelShow:true})}>
           Launch demo modal
         </button> */}
-          <Model 
-          show={this.state.modelShow} onHide={this.closeModel}/>
+          <Model show={this.state.modelShow} onHide={this.closeModel}/>
           
           </div>
       )

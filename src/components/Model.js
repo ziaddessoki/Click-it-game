@@ -5,24 +5,10 @@ import Modal from 'react-bootstrap/Modal'
 
 
 function Model(props) {
-    // const [show, setShow] = useState(props.show);
-  
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-
-    // if(props.show){
-    //     console.log("hitting")
-    //     handleShow()
-    // }
   
     return (
         
       <div >
-        {/* <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
-        </Button> */}
-      {/* {props.show? {handleShow}:''} */}
-  
         <Modal className={Model} {...props}>
           <Modal.Header closeButton>
             <Modal.Title>Good Job!!</Modal.Title>
