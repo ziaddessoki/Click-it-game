@@ -23,9 +23,7 @@ function Model(props) {
         </Button> */}
       {/* {props.show? {handleShow}:''} */}
   
-        <Modal className={Model}
-        // show={show} onHide={handleClose}
-        {...props}>
+        <Modal className={Model} {...props}>
           <Modal.Header closeButton>
             <Modal.Title>Good Job!!</Modal.Title>
           </Modal.Header>

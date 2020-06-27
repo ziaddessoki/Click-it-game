@@ -132,11 +132,8 @@ class Game extends React.Component {
           Launch demo modal
         </button> */}
           <Model 
-          show={this.state.modelShow} onHide={this.closeModel}
-          // ref={this.child}
-          />
-          {/* {m} */}
-          {/* {this.levelChecker} */}
+          show={this.state.modelShow} onHide={this.closeModel}/>
+          
           </div>
       )
     }
