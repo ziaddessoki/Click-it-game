@@ -2,7 +2,8 @@ import React from 'react';
 import './Game.css';
 import Actor from './Actor';
 import theOffice from '../assets/theOffice.json'
-import friends from '../assets/friends.json'
+import friends from '../assets/friends.json';
+import got from '../assets/got.json';
 import Score from './Score';
 import Model from './Model'
 
@@ -62,7 +63,6 @@ class Game extends React.Component {
   }
 
   wrongAnswer = data =>{
-    
     this.setState({
       score:0,
       data: this.resetData(data)
@@ -94,14 +94,16 @@ class Game extends React.Component {
   }
   
   levelChecker=()=>{
-    //test
-    // if(this.state.score=== 30){
-    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130, modelShow: true });
-    // }
-    if(this.state.score===60 && this.state.mode ==="Friends"){
-      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modelShow: true });
-      
+    // test
+    if(this.state.score=== 30){
+      this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modelShow: true });
     }
+    // if(this.state.score===60 && this.state.mode ==="Friends"){
+    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modelShow: true });   
+    // }
+    // else if(this.state.score===130 && this.state.mode ==="THE OFFICE"){
+    //   this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modelShow: true }); 
+    // }
   }
 
   closeModel = ()=>{

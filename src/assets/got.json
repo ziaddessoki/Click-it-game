@@ -1,0 +1,131 @@
+[
+  {
+        "id":1,
+        "image":"./images/got/Arya Stark.png",
+        "clicked": false
+    },{
+        "id":2,
+        "image":"./images/got/Brann Stark.png",
+        "clicked": false
+    },{
+        "id":3,
+        "image":"./images/got/Brienne Of Tarth.png",
+        "clicked": false
+    },{
+        "id":4,
+        "image":"./images/got/Bronn.png",
+        "clicked": false
+    },{
+        "id":5,
+        "image":"./images/got/Catelyn Stark.png",
+        "clicked": false
+    },{
+        "id":6,
+        "image":"./images/got/Daenerys Targaryen.png",
+        "clicked": false
+    },{
+        "id":7,
+        "image":"./images/got/High Sparrow.png",
+        "clicked": false
+    },{
+        "id":8,
+        "image":"./images/got/Hodor.png",
+        "clicked": false
+    },{
+        "id":9,
+        "image":"./images/got/Jaime Lannister.png",
+        "clicked": false
+    },{
+        "id":10,
+        "image":"./images/got/Jaqen H'gar.png",
+        "clicked": false
+    },{
+        "id":11,
+        "image":"./images/got/John Snow.png",
+        "clicked": false
+    },{
+        "id":12,
+        "image":"./images/got/Jojen Reed.png",
+        "clicked": false
+    },{
+        "id":13,
+        "image":"./images/got/Khal Drogo.png",
+        "clicked": false
+    },{
+        "id":14,
+        "image":"./images/got/Lord Varys.png",
+        "clicked": false
+    },{
+        "id":15,
+        "image":"./images/got/Margaery Tyrell.png",
+        "clicked": false
+    },{
+        "id":16,
+        "image":"./images/got/Melisandre.png",
+        "clicked": false
+    },{
+        "id":17,
+        "image":"./images/got/Ned Stark.png",
+        "clicked": false
+    },{
+        "id":18,
+        "image":"./images/got/Olenna Tyrrel.png",
+        "clicked": false
+    },{
+        "id":19,
+        "image":"./images/got/petyr Baelish.png",
+        "clicked": false
+    },{
+        "id":20,
+        "image":"./images/got/Ramsay Bolton.png",
+        "clicked": false
+    },{
+        "id":21,
+        "image":"./images/got/Sansa Stark.png",
+        "clicked": false
+    },{
+        "id":22,
+        "image":"./images/got/Ser Davos.png",
+        "clicked": false
+    },{
+        "id":23,
+        "image":"./images/got/Ser Jorah.png",
+        "clicked": false
+    },{
+        "id":24,
+        "image":"./images/got/The Hound.png",
+        "clicked": false
+    },{
+        "id":25,
+        "image":"./images/got/The Mountain.png",
+        "clicked": false
+    },{
+        "id":26,
+        "image":"./images/got/Theon Greyjoy.png",
+        "clicked": false
+    },{
+        "id":27,
+        "image":"./images/got/Tormund Giantsbane.png",
+        "clicked": false
+    },{
+        "id":28,
+        "image":"./images/got/Tyrion Lannister.png",
+        "clicked": false
+    },{
+        "id":29,
+        "image":"./images/got/Tywin Lannister.png",
+        "clicked": false
+    },{
+        "id":30,
+        "image":"./images/got/White Walker.png",
+        "clicked": false
+    },{
+        "id":31,
+        "image":"./images/got/Ygritte.png",
+        "clicked": false
+    },{
+        "id":32,
+        "image":"./images/got/Cersei Lannister.png",
+        "clicked": false
+    }
+]
