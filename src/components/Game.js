@@ -25,10 +25,13 @@ class Game extends React.Component {
 
   componentDidMount() {
     if(this.props.location.state=== "theOffice"){
-      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 })}
-    else{
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 })
+    }
+    else if(this.props.location.state=== "friends") {
       this.setState({ data: this.shuffle(friends),mode: "Friends", goal:60 })
-    };
+    }else{
+      this.setState({ data: this.shuffle(got),mode: "Game of Thrones", goal:310 })
+    }
     ;
   }
 
@@ -112,14 +115,10 @@ class Game extends React.Component {
     
 
     render() {
-      // if(this.state.score=60 && this.state.mode ==="Friends"){
-      //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130 })
-      // }
-      // let m = null
-      // {this.state.modelShow? m=<Model/> : ""}
+
       return (
         <div >
-          <p className="Title">{this.state.mode} <br/> <spam style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</spam></p>
+          <p className="Title">{this.state.mode} <br/> <span style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</span></p>
           <Score score={this.state.score} topScore={this.state.topScore}></Score>
           <div className="Game">
              {this.state.data.map(person =>(
@@ -128,9 +127,6 @@ class Game extends React.Component {
                 imgClicked={() =>{this.imageClicked(person.id);this.levelChecker()}}></Actor>
               ))}
           </div>
-          {/* <button variant="primary" onClick={this.setState({modelShow:true})}>
-          Launch demo modal
-        </button> */}
           <Model show={this.state.modelShow} onHide={this.closeModel}/>
           
           </div>

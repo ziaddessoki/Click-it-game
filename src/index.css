@@ -16,3 +16,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media 
+/* and (min-device-width : 601px)  */
+ (max-width : 800px)  { body{height:100%;}}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 850px;
+  }
+}

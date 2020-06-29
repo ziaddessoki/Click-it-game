@@ -11,7 +11,7 @@ const  Intro =(props)=>{
         }
     return(
         <div className="Home">
-            <h>Click-it</h>
+            <h1>Click-it</h1>
         <p>Click on any of the character cards. 
             They will be reshuffled and you'll have to choose another. 
             As you keep choosing unique characters, you'll gain hearts and magic power.
@@ -21,6 +21,7 @@ const  Intro =(props)=>{
         <select name="gameMode" value={mode} onChange={e =>setMode(e.target.value)}>
             <option value="friends">Friends - Easy</option>
             <option value="theOffice">The Office - Medium</option>
+            <option value="got">Game Of Thrones - Hard</option>
             
         </select>
         </div>

@@ -26,10 +26,44 @@
     margin: 50px auto 10px 8%;
     padding: 2px 5px;
     background-color: #6a8a82e3;
-    border: 2px black solid;
+    border: 2px rgb(110, 107, 107) solid;
     font-size: 35px;
     font-weight: 700;
-
+    color: white;
 }
 
-
+@media only screen 
+/* and (min-device-width : 601px)  */
+and (max-width : 800px){
+     body{
+        margin: auto 3%;
+        margin-top: 20px;
+        padding:5px 5px;
+        height:350px;
+        float: none;
+        }
+        .Title{
+            float: none;
+            margin: 40px auto 10px;
+            padding: 2px 5px;
+            border: 2px black solid;
+        
+        }
+    }
+@media only screen and (max-width: 600px) {
+    .Game {
+        margin-top: 10px;
+        padding:2px 2px;
+        height:550px;
+        float: none;
+    }
+    .Title{
+        float: none;
+        margin: 40px auto 10px;
+        padding: 2px 5px;
+        font-size: 30px;
+        font-weight: 600;
+        
+    
+    }
+  }

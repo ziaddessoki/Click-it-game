@@ -25,3 +25,10 @@
     font-size: large;
    
 }
+
+@media only screen and (max-width: 600px) {
+    .Navbar{position: absolute;}
+    .item{
+        color: white;
+    }
+}
