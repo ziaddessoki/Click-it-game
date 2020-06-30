@@ -5,7 +5,7 @@ import theOffice from '../assets/theOffice.json'
 import friends from '../assets/friends.json';
 import got from '../assets/got.json';
 import Score from './Score';
-import Model from './Model'
+import Modal from './Modal'
 
 class Game extends React.Component {
   
@@ -18,8 +18,8 @@ class Game extends React.Component {
       topScore: 0,
       goal:0,
       mode:"",
-      modelShow:false,
-      loseModel: false
+      modalShow:false,
+      loseModal: false
       
     }
 }
@@ -69,8 +69,8 @@ class Game extends React.Component {
     this.setState({
       score:0,
       data: this.resetData(data),
-      modelShow:true,
-      loseModel:true,
+      modalShow:true,
+      loseModal:true,
 
     })
   }
@@ -102,27 +102,27 @@ class Game extends React.Component {
   levelChecker=()=>{
     // test
     if(this.state.score=== 30){
-      this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modelShow: true });
+      this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modalShow: true });
     }
     // if(this.state.score===60 && this.state.mode ==="Friends"){
-    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modelShow: true });   
+    //   this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modalShow: true });   
     // }
     // else if(this.state.score===130 && this.state.mode ==="THE OFFICE"){
-    //   this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modelShow: true }); 
+    //   this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modalShow: true }); 
     // }
   }
 
-  closeModel = ()=>{
-    this.setState({modelShow:false,loseModel:false})
+  closeModal = ()=>{
+    this.setState({modalShow:false,loseModal:false})
   }
     
 
     render() {
        if(this.state.score===60 && this.state.mode ==="Friends"){
-      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modelShow: true });   
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modalShow: true });   
     }
     else if(this.state.score===130 && this.state.mode ==="THE OFFICE"){
-      this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modelShow: true }); 
+      this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modalShow: true }); 
     }
       return (
         <div >
@@ -136,7 +136,7 @@ class Game extends React.Component {
               ))}
           </div>
           
-          <Model show={this.state.modelShow} onHide={this.closeModel} loseModel={this.state.loseModel}/>
+          <Modal show={this.state.modalShow} onHide={this.closeModal} loseModal={this.state.loseModal}/>
           
           </div>
       )

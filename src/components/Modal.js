@@ -1,24 +1,24 @@
 import React from 'react';
 import Modal from 'react-bootstrap/Modal'
-// import './Modal.css';
+import './Modal.css';
 
 
 
 
 
-function Model(props) {
+function modal(props) {
 
   let title = "Good Job!!";
   let body = "Woohoo, you've made it to the next level."
 
-  if (props.loseModel){
+  if (props.loseModal){
     title = 'You Suck!!';
     body = "Better luck next time!!"
   }
     return (
         
       <div >
-        <Modal className={Model} {...props}>
+        <Modal  {...props}>
           <Modal.Header closeButton>
             <Modal.Title>{title}</Modal.Title>
           </Modal.Header>
@@ -36,4 +36,4 @@ function Model(props) {
   
 //   render(<Model />);
 
-  export default Model;
+  export default modal;
