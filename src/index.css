@@ -5,21 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/diagonal.jpg"); 
-  background-position: center; /* Center the image */
+  background: url("./assets/diagonal.jpg")no-repeat center fixed; 
+  background-position: center center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
   height: 650px;
+  /* position: relative; */
 }
+/* html{
+ 
+  height: 100%;
+  width: 100%;
+  padding: 0 auto;
+  margin: 0 auto;
+  
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-@media 
-/* and (min-device-width : 601px)  */
- (max-width : 800px)  { body{height:100%;}}
+/* @media  (max-width : 800px){
+
+   body{
+     height:650px;
+    }
+  } */
 
 
 @media only screen and (max-width: 600px) {
