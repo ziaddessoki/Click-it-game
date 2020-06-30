@@ -15,7 +15,6 @@
 /* and (min-device-width : 601px)  */
 and (max-width : 800px){
     .Score{
-        color: green;
         float: none;
         margin: 10px auto 5px auto; 
     }

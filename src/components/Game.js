@@ -19,6 +19,7 @@ class Game extends React.Component {
       goal:0,
       mode:"",
       modelShow:false,
+      loseModel: false
       
     }
 }
@@ -55,20 +56,22 @@ class Game extends React.Component {
     const{ score,topScore } = this.state
     const newScore = score + 10
     const NewTopScore = Math.max(newScore,topScore)
-    console.log(newScore)
+    
 
     this.setState({
       data:this.shuffle(data),
       score: newScore,
       topScore: NewTopScore
     })
-    
   }
 
   wrongAnswer = data =>{
     this.setState({
       score:0,
-      data: this.resetData(data)
+      data: this.resetData(data),
+      modelShow:true,
+      loseModel:true,
+
     })
   }
 
@@ -110,12 +113,17 @@ class Game extends React.Component {
   }
 
   closeModel = ()=>{
-    this.setState({modelShow:false})
+    this.setState({modelShow:false,loseModel:false})
   }
     
 
     render() {
-
+       if(this.state.score===60 && this.state.mode ==="Friends"){
+      this.setState({ data: this.shuffle(theOffice),mode:"THE OFFICE", goal:130,score:0, modelShow: true });   
+    }
+    else if(this.state.score===130 && this.state.mode ==="THE OFFICE"){
+      this.setState({ data: this.shuffle(got),mode:"Game of Thrones", goal:310,score:0, modelShow: true }); 
+    }
       return (
         <div >
           <p className="Title">{this.state.mode} <br/> <span style={{fontWeight:200, fontSize:'25px'}}>Goal:{this.state.goal}</span></p>
@@ -124,10 +132,11 @@ class Game extends React.Component {
              {this.state.data.map(person =>(
                 <Actor key={person.id} src={person.image}
                 shake={!this.state.score && this.state.topScore}
-                imgClicked={() =>{this.imageClicked(person.id);this.levelChecker()}}></Actor>
+                imgClicked={() =>{this.imageClicked(person.id)}}></Actor>
               ))}
           </div>
-          <Model show={this.state.modelShow} onHide={this.closeModel}/>
+          
+          <Model show={this.state.modelShow} onHide={this.closeModel} loseModel={this.state.loseModel}/>
           
           </div>
       )
