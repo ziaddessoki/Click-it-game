@@ -14,9 +14,9 @@ const  Intro =(props)=>{
             <h1>Click-it</h1>
         <p>Click on any of the character cards. 
             They will be reshuffled and you'll have to choose another. 
-            As you keep choosing unique characters, you'll gain hearts and magic power.
-            Choose poorly, and you'll lose your magic power and have to start again.
-            Only when you surpass your total from the previous attempt will you begin to gain hearts again.</p>
+            As you keep choosing unique characters, you'll gain points.
+            Choose poorly, and you'll lose.
+            Only when you surpass your goal from the previous attempt move to a harder level.</p>
         <div>
         <select name="gameMode" value={mode} onChange={e =>setMode(e.target.value)}>
             <option value="friends">Friends - Easy</option>
