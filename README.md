@@ -39,7 +39,7 @@ Click-it is a ReactJs game, that allows its users to choose between 3 different 
 
 ## Future Development
 
-- Barcode scanning
+- User Authentication
 - Mobile app
  
  
