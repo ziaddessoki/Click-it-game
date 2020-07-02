@@ -17,7 +17,7 @@ Click-it is a ReactJs game, that allows its users to choose between 3 different 
 - Hit the goal score to reach next level
 
 
-<br/><strong>Home Page </strong><br/> ![Login](./src/assets/home.png)
+<br/><strong>Home Page </strong><br/> ![Login](./src/assets/Home.png)
 <br/><strong>Level 1</strong> <br/> ![Login](././client/src/images/Log-in.png) 
 
 <br/><strong>Model</strong> <br/> ![Login](././client/src/images/search.png)
