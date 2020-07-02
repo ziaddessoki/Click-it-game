@@ -8,7 +8,7 @@
     /* background-color: #282726; */
     display: flex;
     text-decoration: none;
-    position: fixed;
+    position: absolute;
     z-index: 80;
     
     
